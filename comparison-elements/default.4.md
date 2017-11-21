@@ -1,25 +1,38 @@
-# Default 4 - http://default-4-entry.example.com
-slow, MIT, green, green, grey
+# Apache Brooklyn - https://brooklyn.apache.org
+Blueprinting, Richtlinienbasiert, Entities
 
-## Performance
-- slow
+## Kompatibilität
+- Container
+- VM
+	
+## Aktive Entwicklung
+- Aktiv
 
-## License
-- MIT
+## Ressourcenbedarf
+- Gering
+- Mittel
 
-## Showcase 2.0
-- green
-- green
-- grey
+## Security
+- Eingeschränkt
 
-## Description
-Default long description in __markdown__.
+## Unterstützte Anzahl Knoten
+- Ja
 
-## Uncolored
-- color 1
+## Umgang mit Inkonsistenz der Knoten
+- Unterstützung
+- Mobil
+- Verbindungsverlust
 
-## Repo
-- https://github.com/SitOPT/SitOPT-Installation-Script
+## Unterbrechungsfreies Deployment
+- Ja
 
-## NumberColumn
-- 100
+## Unterstützung von Echtzeitanalyse
+- Visualisierung
+- Echtzeitanalyse
+- Cloud Anbindung
+
+## Erweiterbarkeit
+- Ja
+
+## Lizenz
+- Apache 2.0

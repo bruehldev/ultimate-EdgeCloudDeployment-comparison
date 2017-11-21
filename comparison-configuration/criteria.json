@@ -1,24 +1,166 @@
 [
   {
-    "name": "Performance",
-    "tag": "Performance",
-    "description": "Performace of entry.",
-    "placeholder": "Select performace rating ...",
+    "name": "Kompatibilität",
+    "tag": "Kompatibilität",
+    "description": "Unabhängig vom genutzten Betriebssystem",
+    "placeholder": "Kompatibilität",
     "and_search": true,
     "values": [
       {
-        "name": "slow",
-        "description": "I am slow!"
+        "name": "Container"
       },
       {
-        "name": "fast",
-        "description": "I am fast!"
+        "name": "VM"
       }
     ]
   },
   {
-    "name": "Licenses",
-    "tag": "License",
+    "name": "Aktive Entwicklung",
+    "tag": "Aktive Entwicklung",
+    "description": "Aktiv, wenn in den letzten 6 Monaten etwas daran entwickelt wurde.",
+    "placeholder": "Aktive Entwicklung",
+    "and_search": false,
+    "values": [
+      {
+        "name": "Aktiv"
+      },
+      {
+        "name": "Inaktiv"
+      },
+	  {
+        "name": "Nicht sicher"
+      }
+    ]
+  },
+  {
+    "name": "Ressourcenbedarf",
+    "tag": "Ressourcenbedarf",
+    "description": "Ressourcenbedarf",
+    "placeholder": "Ressourcenbedarf",
+    "and_search": true,
+    "values": [
+      {
+        "name": "Sehr gering"
+      },
+      {
+        "name": "Gering"
+      },
+	  {
+        "name": "Mittel"
+      },
+	  {
+        "name": "Hoch"
+      }
+    ]
+  },
+  {
+    "name": "Security",
+    "tag": "Security",
+    "description": "Security",
+    "placeholder": "Security",
+    "and_search": false,
+    "values": [
+      {
+        "name": "Ja"
+      },
+      {
+        "name": "Eingeschränkt"
+      },
+	  {
+        "name": "Nein"
+      }
+    ]
+  },
+  {
+    "name": "Unterstützte Anzahl Knoten",
+    "tag": "Unterstützte Anzahl Knoten",
+    "description": "Unterstützte Anzahl Knoten",
+    "placeholder": "Unterstützte Anzahl Knoten",
+    "and_search": false,
+    "values": [
+      {
+        "name": "Ja"
+      },
+      {
+        "name": "Eingeschränkt"
+      },
+	  {
+        "name": "Nein"
+      }
+    ]
+  },
+  {
+    "name": "Umgang mit Inkonsistenz der Knoten",
+    "tag": "Umgang mit Inkonsistenz der Knoten",
+    "description": "Umgang mit Inkonsistenz der Knoten",
+    "placeholder": "Umgang mit Inkonsistenz der Knoten",
+    "and_search": true,
+    "values": [
+      {
+        "name": "Unterstützung"
+      },
+      {
+        "name": "Mobil"
+      },
+	  {
+        "name": "Verbindungsverlust"
+      }
+    ]
+  },
+  {
+    "name": "Unterbrechungsfreies Deployment",
+    "tag": "Unterbrechungsfreies Deployment",
+    "description": "Ist Visualisierung, Echtzeitanalyse oder Cloud Anbindung möglich?",
+    "placeholder": "Deployment",
+    "and_search": false,
+    "values": [
+      {
+        "name": "Ja"
+      },
+      {
+        "name": "Nein"
+      }
+    ]
+  },
+  {
+    "name": "Unterstützung von Echtzeitanalyse",
+    "tag": "Unterstützung von Echtzeitanalyse",
+    "description": "Ist Visualisierung, Echtzeitanalyse oder Cloud Anbindung möglich?",
+    "placeholder": "Echtzeitanalyse",
+    "and_search": true,
+    "values": [
+      {
+        "name": "Visualisierung"
+      },
+      {
+        "name": "Echtzeitanalyse"
+      },
+      {
+        "name": "Cloud Anbindung"
+      }
+    ]
+  }, 
+  {
+    "name": "Erweiterbarkeit",
+    "tag": "Erweiterbarkeit",
+    "description": "Lässt sich die Software erweitern?",
+    "placeholder": "Soll sich die Softwar erweitern lassen?",
+    "and_search": false,
+    "values": [
+      {
+        "name": "Ja"
+      },
+      {
+        "name": "Nein"
+      },
+      {
+        "name": "Egal"
+      }
+    ]
+  },
+  {
+    "name": "Lizenz",
+    "tag": "Lizenz",
     "description": "Popular licenses for DOM manipulation libraries.",
     "placeholder": "Select license ...",
     "and_search": false,
@@ -31,81 +173,10 @@
       },
       {
         "name": "MPL 2.0"
+      },
+	  {
+        "name": "Proprietär"
       }
     ]
-  },
-  {
-    "name": "Showcase",
-    "tag": "Showcase 2.0",
-    "description": "Popular showcases.",
-    "placeholder": "Select showcase ...",
-    "and_search": false,
-    "values": [
-      {
-        "name": "red 1"
-      },
-      {
-        "name": "red 2"
-      },
-      {
-        "name": "green"
-      },
-      {
-        "name": "yellow"
-      },
-      {
-        "name": "dark blue"
-      },
-      {
-        "name": "grey"
-      },
-      {
-        "name": "light blue"
-      }
-    ]
-  },
-  {
-    "name": "Uncolored",
-    "tag": "Uncolored",
-    "description": "Tags that were originally uncolored.",
-    "placeholder": "Select color ...",
-    "and_search": false,
-    "values": [
-      {
-        "name": "color 1"
-      },
-      {
-        "name": "color 2"
-      },
-      {
-        "name": "color 3"
-      }
-    ]
-  },
-  {
-    "name": "Active Development",
-    "tag": "Active Development",
-    "description": "Is the software in active development",
-    "placeholder": "Select activity state...",
-    "and_search": false,
-    "values": [
-      {
-        "name": "Active"
-      },
-      {
-        "name": "Not Sure"
-      },
-      {
-        "name": "Inactive"
-      }
-    ]
-  },
-  {
-    "name": "Number Column",
-    "tag": "NumberColumn",
-    "description": "Tags that were originally numbered.",
-    "placeholder": "Select number ranges ...",
-    "and_search": false,
-    "range_search": true
   }
 ]

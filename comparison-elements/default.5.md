@@ -1,17 +1,37 @@
-# Default 5 - http://default-5-entry.example.com
-almost everything unknown
+# Chef - https://www.chef.io/chef
+Cookbooks und Recipes
 
-## Performance
+## Kompatibilität
+- Container
+- VM
+	
+## Aktive Entwicklung
+- Aktiv
 
-## License
+## Ressourcenbedarf
+- Hoch
+- Mittel
 
-## Showcase 2.0
+## Security
+- Ja
 
-## Description
-This element has almost no values to test unknown
+## Unterstützte Anzahl Knoten
+- Ja
 
-## Uncolored
+## Umgang mit Inkonsistenz der Knoten
+- Unterstützung
+- Verbindungsverlust
 
-## Repo
+## Unterbrechungsfreies Deployment
+- Nein
 
-## NumberColumn
+## Unterstützung von Echtzeitanalyse
+- Visualisierung
+- Echtzeitanalyse
+- Cloud Anbindung
+
+## Erweiterbarkeit
+- Ja
+
+## Lizenz
+- Proprietär

@@ -1,18 +1,23 @@
 {
-  "title": "Ultimate-Comparison",
-  "subtitle": "Ultimate comparison framework",
-  "selecttitle": "Criteria",
-  "tabletitle": "Comparison of DOM manipulation libraries",
+  "title": "Entscheidungstool",
+  "subtitle": "Deployment Werkzeuge für Edge-Clouds",
+  "selecttitle": "Kriterien",
+  "tabletitle": "Vergleich von Deployment Werkzeugen",
   "details": {
-    "header-label": "Performance",
+    "header-label": "",
     "body-main-title": "Description",
     "body": "Description",
     "body-attachment-tags": [
-      "Performance",
-      "License",
-      "Showcase 2.0",
-      "Uncolored",
-      "Active Development"
+	  "Kompatibilität",
+	  "Aktive Entwicklung",
+	  "Ressourcenbedarf",
+	  "Security",
+	  "Unterstützte Anzahl Knoten",
+	  "Umgang mit Inkonsistenz der Knoten",
+	  "Unterbrechungsfreies Deployment",
+	  "Unterstützung von Echtzeitanalyse",
+	  "Erweiterbarkeit",
+	  "Lizenz"
     ]
   },
   "repository": "https://github.com/ultimate-comparisons/ultimate-comparison-BASE.git"

@@ -11,47 +11,248 @@
         "valign": "top"
     },
     {
-        "name": "",
-        "tag": "Rating",
-        "display": true,
-        "type": {
-            "tag": "rating"
-        }
-    },
-    {
-        "name": "Short Description",
+        "name": "Beschreibung",
         "tag": "descr",
-        "style": "width: 25%",
+        "style": "width: 5%",
         "display": true,
         "type": {
             "tag": "text"
         }
     },
-    {
-        "name": "Performance",
-        "tag": "Performance",
-        "style": "width: 5%",
+	{
+        "name": "Kompatibilität",
+        "tag": "Kompatibilität",
+		"style": "width: 5%",
         "display": true,
+        "type": {
+            "tag": "label",
+			"values": [
+                {
+                    "name": "Container",
+                    "description": "Leichtgewichtig, ohne Virtualisierung",
+                    "class": "label-success"
+                },
+                {
+                    "name": "VM",
+                    "description": "Mit Hypervisor oder Virtual Machine Monitor",
+                    "class": "label-success"
+                }
+			]
+        }
+    },
+	{
+        "name": "Aktive Entwicklung",
+        "tag": "Aktive Entwicklung",
+        "display": true,
+		"style": "width: 5%",
         "type": {
             "tag": "label",
             "values": [
                 {
-                    "name": "fast",
-                    "description": "Overall performance below 200ms.",
+                    "name": "Aktiv",
+                    "description": "Entwicklung in den letzten 6 Monaten ",
                     "class": "label-success"
                 },
                 {
-                    "name": "slow",
-                    "description": "Overall performance above 200ms.",
+                    "name": "Inaktiv",
+                    "description": "In den letzten 6 Monaten kein Fortschritt",
                     "class": "label-danger"
+                },
+                {
+                    "name": "Nicht sicher",
+                    "description": "Nicht sicher",
+                    "class": "label-warning"
                 }
             ]
         }
     },
+	{
+        "name": "Ressourcenbedarf",
+        "tag": "Ressourcenbedarf",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "label",
+			"values": [
+			{
+				"name": "Sehr gering",
+				"description": "< Single Core 700 MHz, 256MB RAM, 2GB Speicher",
+				"class": "label-success"
+			},
+			{
+				"name": "Gering",
+				"description": "Sehr gering bis ca. Quad 2,3 GHz und Quad 1,7 GHz, 4GB RAM, 64GB Speicher",
+				"class": "label-warning"
+			},
+			{
+				"name": "Mittel",
+				"description": "Vergleichbar mit Desktop PCs und kleinen Servern",
+				"color": "hsl(150, 100%, 70%)"
+			},
+			{
+				"name": "Hoch",
+				"description": "Vergleichbar mit Großserver, Supercomputer, Serverfarmen",
+				"class": "label-danger"
+			}
+			]
+        }
+    },
+	{
+        "name": "Security",
+        "tag": "Security",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "label",
+			"values": [
+			{
+				"name": "Ja",
+				"description": "Das System ist nach dem Deployment ausreichend sicher.",
+				"class": "label-success"
+			},
+			{
+				"name": "Eingeschränkt",
+				"description": "Mit Aufwand kann die Sicherheit verbessert werden.",
+				"class": "label-warning"
+			},
+			{
+				"name": "Nein",
+				"description": "Die Sicherheitsmängel lassen sich nicht verbessern.",
+				"class": "label-danger"
+			}
+			]
+        }
+    },
+	{
+        "name": "Unterstützte Anzahl Knoten",
+        "tag": "Unterstützte Anzahl Knoten",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "label",
+			"values": [
+			{
+				"name": "Ja",
+				"description": "Es existiert kein theoretisches Limit von der Anzahl der Knoten",
+				"class": "label-success"
+			},
+			{
+				"name": "Eingeschränkt",
+				"description": "Sehr hohe Zahl an Knoten unterstützt (Millionen und mehr)",
+				"class": "label-warning"
+			},
+			{
+				"name": "Nein",
+				"description": "Weniger als Millionen Knoten werden unterstützt",
+				"class": "label-danger"
+			}
+			]
+        }
+    },
+	{
+        "name": "Umgang mit Inkonsistenz der Knoten",
+        "tag": "Umgang mit Inkonsistenz der Knoten",
+        "style": "width: 15%",
+        "display": true,
+        "type": {
+            "tag": "label",
+			"values": [
+			{
+				"name": "Unterstützung",
+				"description": "Behandelt das System das Verschwinden und Auftauchen von Knoten?",
+				"color": "hsl(150, 100%, 70%)"
+			},
+			{
+				"name": "Mobil",
+				"description": "Unterstützt das System Änderungen der Zugriffspunkte (geographischer Wechsel)?",
+				"color": "hsl(150, 100%, 70%)"
+			},
+			{
+				"name": "Verbindungsverlust",
+				"description": "Unterstützt das System die Speicherung von Information auf Knoten im Falle eines Verbindungsverlusts?",
+				"color": "hsl(150, 100%, 70%)"
+			}
+			]
+        }
+    },
+	{
+        "name": "Unterbrechungsfreies Deployment",
+        "tag": "Unterbrechungsfreies Deployment",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "label",
+			"values": [
+			{
+				"name": "Ja",
+				"description": "Deployment eines Knoten unterbricht nicht die Funktionalität des Systems.",
+				"color": "hsl(165, 100%, 70%)"
+			},
+			{
+				"name": "Nein",
+				"description": "System muss mit Aufwand erweitert werden.",
+				"class": "label-danger"
+			}
+			]
+        }
+    },
+	{
+        "name": "Unterstützung von Echtzeitanalyse",
+        "tag": "Unterstützung von Echtzeitanalyse",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "label",
+			"values": [
+			{
+				"name": "Visualisierung",
+				"description": "Unterstützt Visualisierung des Systems.",
+				"color": "hsl(150, 100%, 70%)"
+			},
+			{
+				"name": "Echtzeitanalyse",
+				"description": "Unterstützt Echtzeitanalyse der Smart-End-Devices.",
+				"color": "hsl(150, 100%, 70%)"
+			},
+			{
+				"name": "Cloud Anbindung",
+				"description": "Cloud Anbindung wird unterstützt.",
+				"color": "hsl(150, 100%, 70%)"
+			}
+			]
+        }
+    },
+	{
+        "name": "Erweiterbarkeit",
+        "tag": "Erweiterbarkeit",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "label",
+			"values": [
+			{
+				"name": "Ja",
+				"description": "System ist durch Schnittstellen, Applikation zur System Konfiguration, Skriptsprache oder Plug-in erweiterbar.",
+                "class": "label-success"
+			},
+			{
+				"name": "Nein",
+				"description": "Black-Box extensibility nicht gegeben.",
+                "class": "label-danger"
+			},
+			{
+				"name": "Egal",
+				"description": "Egal",
+                "class": "label-warning"
+			}
+			]
+        }
+    },
     {
-        "name": "License",
-        "tag": "License",
-        "display": false,
+        "name": "Lizenz",
+        "tag": "Lizenz",
+		"style": "width: 5%",
+        "display": true,
         "type": {
             "tag": "label",
             "class": "label label-info",
@@ -70,157 +271,11 @@
                     "name": "MPL 2.0",
                     "description": "http://choosealicense.com/licenses/mpl-2.0/",
                     "color": "hsl(165, 100%, 70%)"
-                }
-            ]
-        }
-    },
-    {
-        "name": "Showcase",
-        "tag": "Showcase 2.0",
-        "style": "width: 5%",
-        "display": true,
-        "type": {
-            "tag": "label",
-            "values": [
-                {
-                    "name": "dark blue",
-                    "description": "Show case for dark blue label",
-                    "class": "label-primary"
                 },
-                {
-                    "name": "green",
-                    "description": "Show case for green label",
-                    "class": "label-success"
-                },
-                {
-                    "name": "grey",
-                    "description": "Show case for grey label",
-                    "class": "label-default"
-                },
-                {
-                    "name": "light blue",
-                    "description": "",
-                    "class": "label-info"
-                },
-                {
-                    "name": "red 1",
-                    "description": "Show case for red label 1",
-                    "class": "label-danger"
-                },
-                {
-                    "name": "red 2",
-                    "description": "Show case for red label 2",
-                    "class": "label-danger"
-                },
-                {
-                    "name": "yellow",
-                    "description": "Show case for yellow label",
-                    "class": "label-warning"
-                }
-            ]
-        }
-    },
-    {
-        "name": "Uncolored",
-        "tag": "Uncolored",
-        "display": true,
-        "type": {
-            "tag": "label",
-            "values": [
-                {
-                    "name": "color 1",
-                    "description": "Color 1",
-                    "weight": 1,
-                    "color": "hsl(180, 100%, 70%)"
-                },
-                {
-                    "name": "color 2",
-                    "description": "Color 2",
-                    "weight": 2,
-                    "color": "hsl(195, 100%, 70%)"
-                },
-                {
-                    "name": "color 3",
-                    "description": "Color 3",
-                    "weight": 3,
-                    "color": "hsl(210, 100%, 70%)"
-                }
-            ]
-        }
-    },
-    {
-        "name": "Active Development",
-        "tag": "Active Development",
-        "display": true,
-        "repo": true,
-        "type": {
-            "tag": "label",
-            "values": [
-                {
-                    "name": "Active",
-                    "description": "Active",
-                    "min-age": -1,
-                    "max-age": 1,
-                    "max-age-unit": "months",
-                    "class": "label-success"
-                },
-                {
-                    "name": "Inactive",
-                    "description": "Inactive",
-                    "min-age": 6,
-                    "min-age-unit": "months",
-                    "max-age": -1,
-                    "class": "label-danger"
-                },
-                {
-                    "name": "Not Sure",
-                    "description": "Not Sure",
-                    "min-age": 1,
-                    "min-age-unit": "months",
-                    "max-age": 6,
-                    "max-age-unit": "months",
-                    "class": "label-warning"
-                }
-            ]
-        }
-    },
-    {
-        "name": "Number Column",
-        "tag": "NumberColumn",
-        "display": true,
-        "order": "asc",
-        "type": {
-            "tag": "label",
-            "values": [
-                {
-                    "name": 100,
-                    "description": 100,
-                    "weight": 1,
-                    "color": "hsl(225, 100%, 70%)"
-                },
-                {
-                    "name": 199,
-                    "description": 199,
-                    "weight": 1.99,
-                    "color": "hsl(240, 100%, 70%)"
-                },
-                {
-                    "name": 200,
-                    "description": 200,
-                    "weight": 2,
-                    "color": "hsl(255, 100%, 70%)"
-                },
-                {
-                    "name": 250,
-                    "description": 250,
-                    "weight": 3,
-                    "color": "hsl(270, 100%, 70%)"
-                },
-                {
-                    "name": 300,
-                    "description": 300,
-                    "weight": 4,
-                    "color": "hsl(285, 100%, 70%)"
+				{
+                    "name": "Proprietär",
+                    "description": "Änderung und Anpassung durch Nutzer und Dritte stark einschränkt.",
+                    "color": "hsl(165, 100%, 70%)"
                 }
             ]
         }

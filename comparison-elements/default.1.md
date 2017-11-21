@@ -1,27 +1,37 @@
-# Default 1 - http://default-1-entry.example.com
-slow, MIT, red 1, grey
+# OpenTosca - http://www.opentosca.org
+TOSCA , CSARs, Winery, Vinothek
 
-## Performance
-- slow
-    - [@Bry07towardsformal]
+## Kompatibilität
+- Container
+- VM
+	
+## Aktive Entwicklung
+- Aktiv
 
-## License
-- MIT
+## Ressourcenbedarf
+- Gering
 
-## Showcase 2.0
-- red 1
-- grey
+## Security
+- Ja
 
-## Description
-Default long description in __markdown__.
+## Unterstützte Anzahl Knoten
+- Ja
 
-## Uncolored
-- color 1
-- color 2
+## Umgang mit Inkonsistenz der Knoten
+- Unterstützung
+- Mobil
+- Verbindungsverlust
 
-## Repo
-- https://github.com/ultimate-comparisons/ultimate-comparison-BASE
+## Unterbrechungsfreies Deployment
+- Ja
 
-## NumberColumn
-- 200
-- 199
+## Unterstützung von Echtzeitanalyse
+- Visualisierung
+- Echtzeitanalyse
+- Cloud Anbindung
+
+## Erweiterbarkeit
+- Nein
+
+## Lizenz
+- Apache 2.0

@@ -1,25 +1,36 @@
-# Default 3 - http://default-3-entry.example.com
-fast, MPL 2.0, red 1, red 2, light blue
+# Kubernetes - https://kubernetes.io
+Verwaltung von containerisierten Anwendungen
 
-## Performance
-- fast
+## Kompatibilität
+- Container
+	
+## Aktive Entwicklung
+- Aktiv
 
-## License
-- MPL 2.0
+## Ressourcenbedarf
+- Gering
 
-## Showcase 2.0
-- red 1
-- red 2
-- light blue
+## Security
+- Eingeschränkt
 
-## Description
-Default long description in __markdown__.
+## Unterstützte Anzahl Knoten
+- Nein
 
-## Uncolored
-- color 2
+## Umgang mit Inkonsistenz der Knoten
+- Unterstützung
+- Mobil
+- Verbindungsverlust
 
-## Repo
-- https://github.com/ultimate-comparisons/ultimate-IoT-platform-comparison
+## Unterbrechungsfreies Deployment
+- Ja
 
-## NumberColumn
-- 250
+## Unterstützung von Echtzeitanalyse
+- Visualisierung
+- Echtzeitanalyse
+- Cloud Anbindung
+
+## Erweiterbarkeit
+- Ja
+
+## Lizenz
+- Apache 2.0
