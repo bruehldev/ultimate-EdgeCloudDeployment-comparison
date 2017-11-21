@@ -5,9 +5,9 @@ env:
 - GIT_DEPLOY_DIR: www
 script: npm test
 after_success:
-- git remote set-url origin git@github.com:ultimate-comparisons/ultimate-comparison-BASE.git
+- git remote set-url origin https://github.com/bruehldev/ultimate-EdgeCloudDeployment-comparison.git
 #- openssl aes-256-cbc -K $encrypted_08460152d0a3_key -iv $encrypted_08460152d0a3_iv -in id_rsa.enc -out id_rsa -d
-- openssl aes-256-cbc -K $encrypted_e7cc94ff2647_key -iv $encrypted_e7cc94ff2647_iv -in github_deploy_key.enc -out id_rsa -d
+- openssl aes-256-cbc -K $encrypted_2516f87681c0_key -iv $encrypted_2516f87681c0_iv -in id_rsa.enc -out id_rsa -d
 - ssh-add github_deploy_key
 - eval "$(ssh-agent -s)"
 - chmod 600 id_rsa
